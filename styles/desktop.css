@@ -1,0 +1,22 @@
+.exchange {
+  padding-bottom: 88px;
+}
+
+.details {
+  padding: 48px 6%;
+}
+.cards-container {
+  gap: 28px;
+}
+.detail-card{
+  max-width: 420px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__title {
+  padding-top: 0;
+}

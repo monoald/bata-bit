@@ -1,0 +1,21 @@
+.arrow {
+  display: none;
+}
+
+.price-card__cta {
+  justify-content: center;
+  gap: 4%;
+}
+
+.banner__title {
+  padding-top: 66px;
+}
+
+.price-slider {
+  justify-content: center;
+}
+
+.footer {
+  justify-content: center;
+  gap: 380px;
+}
