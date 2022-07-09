@@ -140,18 +140,13 @@ html {
 
 .exchange__table {
   width: 100%;
-  height: auto;
+  max-width: 1135px;
+  height: 250px;
   display: flex;
-  overflow-y: scroll;
-  scroll-snap-type: x mandatory;
+  align-items: center;
+  overflow-x: hidden;
   scroll-behavior: smooth;
-}
-.exchange__table::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
-}
-.exchange__table {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  scroll-snap-type: x mandatory;
 }
 .exchange__table .title {
   width: 60%;
@@ -160,10 +155,12 @@ html {
   font-weight: 700;
 }
 
-.coins {
+.table-container {
   position: relative;
-  width: 100%;
-  min-width: 320px;
+  width: 70%;
+  min-width: 235px;
+  max-width: 400px;
+  margin: 0 48px;
   display: grid;
   place-items: center;
   gap: 16px;
@@ -174,9 +171,10 @@ html {
   color: var(--bitcoin-orange);
 }
 .table {
-  width: 70%;
+  z-index: 0;
+  width: 100%;
   min-width: 235px;
-  max-width: 500px;
+  max-width: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-family: "Inter", sans-serif;
@@ -230,34 +228,29 @@ html {
 }
 .arrow {
   position: absolute;
+  z-index: 1;
   width: 14px;
+  min-width: 14px;
   height: 14px;
+  min-height: 14px;
+  border: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: transparent;
   background-image: url('./assets/icons/right-arrow.svg');
   cursor: pointer;
 }
-.coins .arrow {
+.arrow--next {
   right: 16px;
 }
-  
-.comissions {
-  position: relative;
-  display: grid;
-  width: 100%;
-  min-width: 320px;
-  place-items: center;
-  gap: 16px;
-  text-align: start;
-  scroll-snap-align: center;
-}
-.comissions .title {
-  color: var(--secondary-blue);
-}
-.comissions .arrow {
+.arrow--back {
   left: 16px;
   transform: rotate(180deg);
+}
+
+.comissions .title {
+  color: var(--secondary-blue);
 }
 
 /*----------Details----------*/
@@ -393,7 +386,7 @@ html {
   width: 100%;
   min-width: 320px;
   height: auto;
-  padding: 66px 4%;
+  padding: 66px 0;
   display: grid;
   text-align: center;
   place-items: center;
@@ -401,7 +394,7 @@ html {
   gap: 44px;
 }
 .plans__text {
-  width: 100%;
+  width: 92%;
   height: auto;
   display: grid;
   gap: 22px;
@@ -418,6 +411,25 @@ html {
   line-height: 1.8rem;
   color: var(--dark-gray);
 }
+
+.price-slider {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+.price-slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+.price-slider {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .price-card {
   position: relative;
   width: 60%;
@@ -425,11 +437,13 @@ html {
   max-width: 300px;
   height: 250px;
   padding: 28px 22px 22px;
+  margin: 0 12px;
   display: grid;
   place-items: center;
   background-color: var(--just-white);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+  scroll-snap-align: center;
 }
 .price-card__recommended {
   position: absolute;

@@ -47,7 +47,10 @@
       </div>
 
       <section class="exchange__table">
-        <div class="coins" id="coins">
+        <button id="arrow-next" class="arrow arrow--next"></button>
+        <button id="arrow-back" class="arrow arrow--back" ></button>
+        
+        <div class="table-container coins" id="coins">
           <h2 class="title">Monedas</h3>
   
           <div class="table">
@@ -67,11 +70,9 @@
           </div>
   
           <p  class="updated-at"><b>Actualizado</b>: 19 Julio 23:45</p>
-
-          <a class="arrow" href="#comissions"></a>
         </div>
 
-        <div class="comissions" id="comissions">
+        <div class="table-container comissions" id="comissions">
           <h2 class="title">Comisiones</h3>
   
           <div class="table">
@@ -91,8 +92,6 @@
           </div>
   
           <p  class="updated-at"><b>Actualizado</b>: 19 Julio 23:45</p>
-
-          <a class="arrow" href="#coins"></a>
         </div>
       </section>
     </section>
@@ -183,25 +182,67 @@
         </p>
       </div>
 
-      <section class="price-card">
-        <h3 class="price-card__recommended">Recomendado</h3>
+      <section class="price-slider">  
+        <section class="price-card">
+  
+          <h3 class="price-card__title">Pago Mensual</h3>
+  
+          <div class="price-card__price">
+            <span class="price-card__dollar-sign">$</span>
+  
+            <b class="price-card__number">19</b>
+          </div>
 
-        <h3 class="price-card__title">Pago Anual</h3>
+          <p class="price-card__paragraph">
+            *Ahorra con el plan Anual o Trimestral.
+          </p>
+  
+          <button class="price-card__cta">
+            Escoger este 
+            <span class="icon"></spana>
+          </button>
+        </section>
 
-        <div class="price-card__price">
-          <span class="price-card__dollar-sign">$</span>
-
-          <b class="price-card__number">99</b>
-        </div>
-
-        <p class="price-card__paragraph">
-          *Ahorras $129 comparado al plan mensual.
-        </p>
-
-        <button class="price-card__cta">
-          Escoger este 
-          <span class="icon"></spana>
-        </button>
+        <section class="price-card">
+          <h3 class="price-card__recommended">Recomendado</h3>
+  
+          <h3 class="price-card__title">Pago Anual</h3>
+  
+          <div class="price-card__price">
+            <span class="price-card__dollar-sign">$</span>
+  
+            <b class="price-card__number">99</b>
+          </div>
+  
+          <p class="price-card__paragraph">
+            *Ahorras $129 comparado al plan mensual.
+          </p>
+  
+          <button class="price-card__cta">
+            Escoger este 
+            <span class="icon"></spana>
+          </button>
+        </section>
+  
+        <section class="price-card">
+  
+          <h3 class="price-card__title">Pago Trimestral</h3>
+  
+          <div class="price-card__price">
+            <span class="price-card__dollar-sign">$</span>
+  
+            <b class="price-card__number">40</b>
+          </div>
+  
+          <p class="price-card__paragraph">
+            *Ahorras $68 comparado al plan mensual.
+          </p>
+  
+          <button class="price-card__cta">
+            Escoger este 
+            <span class="icon"></spana>
+          </button>
+        </section>
       </section>
     </section>
   </main>
@@ -227,5 +268,7 @@
       <img src="./assets/img/logo-footer.svg" alt="Logo Bata Bit" class="logo__icon">
     </figure>
   </footer>
+
+  <script src="./main.js"></script>
 </body>
 </html>
