@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index,follow">
+  <meta name="description" content="Bat Bit is a crypto exchange, where you can buy and sold certain crypto currencies.">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link 
@@ -18,7 +19,12 @@
 <body>
   <header class="header">
     <figure class="logo">
-      <img class="logo__image" src="./assets//img/logo.svg" alt="Logo Bata Bit">
+      <img class="logo__image"
+        src="./assets//img/logo.svg" 
+        alt="Logo Bata Bit"
+        width="152"
+        height="24"
+      >
     </figure>
 
     <h1 class="header__title">
@@ -29,7 +35,7 @@
       Batabit te ayuda a navegar entre los diferentes precios y tendencias.
     </p>
 
-    <a href="" class="header__cta">
+    <a href="#plans" class="header__cta">
       Conoce nuestros planes
       <span class="icon"></span>
     </a>
@@ -49,8 +55,8 @@
       </div>
 
       <section class="exchange__table">
-        <button id="arrow-next" class="arrow arrow--next"></button>
-        <button id="arrow-back" class="arrow arrow--back" ></button>
+        <button id="arrow-next" class="arrow arrow--next" aria-label="Next Element"></button>
+        <button id="arrow-back" class="arrow arrow--back" aria-label="Previous Element"></button>
         
         <div class="table-container coins" id="coins">
           <h2 class="title">Monedas</h3>
@@ -174,7 +180,7 @@
       <h2 class="banner__title">Conócelo hoy.</h2>
     </section>
 
-    <section class="plans">
+    <section id="plans" class="plans">
       <div class="plans__text">
         <h2 class="plans__title">
           Escoge el plan que mejor se ajuste a ti.
@@ -199,7 +205,7 @@
             *Ahorra con el plan Anual o Trimestral.
           </p>
   
-          <button class="price-card__cta">
+          <button class="price-card__cta" aria-label="Choose Plan">
             Escoger este 
             <span class="icon"></spana>
           </button>
@@ -220,7 +226,7 @@
             *Ahorras $129 comparado al plan mensual.
           </p>
   
-          <button class="price-card__cta">
+          <button class="price-card__cta" aria-label="Choose Plan">
             Escoger este 
             <span class="icon"></spana>
           </button>
@@ -240,7 +246,7 @@
             *Ahorras $68 comparado al plan mensual.
           </p>
   
-          <button class="price-card__cta">
+          <button class="price-card__cta" aria-label="Choose Plan">
             Escoger este 
             <span class="icon"></spana>
           </button>
@@ -253,21 +259,26 @@
     <nav class="nav-bar">
       <ul class="list">
         <li class="list__item">
-          <a href="" class="list__link">Linkedin</a>
+          <a href="https://github.com/" class="list__link">Linkedin</a>
         </li>
 
         <li class="list__item">
-          <a href="" class="list__link">Crunchbase</a>
+          <a href="https://github.com/" class="list__link">Crunchbase</a>
         </li>
 
         <li class="list__item">
-          <a href="" class="list__link">Hackernews</a>
+          <a href="https://github.com/" class="list__link">Hackernews</a>
         </li>
       </ul>
     </nav>
 
     <figure class="logo">
-      <img src="./assets/img/logo-footer.svg" alt="Logo Bata Bit" class="logo__icon">
+      <img class="logo__icon"
+        src="./assets/img/logo-footer.svg" 
+        alt="Logo Bata Bit" 
+        width="64"
+        height="50"
+        >
     </figure>
   </footer>
 
